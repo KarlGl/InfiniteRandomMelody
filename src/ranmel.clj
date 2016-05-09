@@ -49,7 +49,7 @@
       
     
   (definst sin-wave [freq 440 length 1 sustain 0.9 attack 0.01 release 0.1 vol 1] 
-    (* (env-gen (lin-env attack sustain release) 1 1 0 length FREE)
+    (* (env-gen (lin attack sustain release) 1 1 0 length FREE)
 	(sin-osc freq)
 	vol))
 	
